@@ -100,7 +100,7 @@ console.log(ageAria >= 18);
 
 const isFullAge = ageAria >= 18;
 console.log(now - 1991 > now - 2018);
-*/
+
 
 const now = 2037;
 const ageJordan = now - 1996;
@@ -123,3 +123,53 @@ console.log(jordan);
 const jordanNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
 
 console.log(jordanNew);
+
+console.log(`here is a regular string`);
+
+console.log("string with \n\ multiple \n\ lines");
+
+console.log(`String with
+  multiple
+  lines`);
+
+
+const age = 15;
+
+if (age >= 18) {
+  console.log(`Sarah can start her driving license`);
+} else {
+  const yearsLeft = 18 - age;
+
+  console.log(
+    `Sarah has ${yearsLeft} years left before she can start her driving license`,
+  );
+}
+
+const birthYear = 1996;
+
+let century;
+
+if (birthYear <= 2000) {
+  century = 20;
+} else {
+  century = 21;
+}
+
+console.log(century);
+*/
+
+// type conversion
+
+const inputYear = "1991";
+console.log(Number(inputYear));
+
+console.log(Number(inputYear) + 18);
+
+console.log(Number("Jordan"));
+console.log(typeof NaN);
+
+console.log(String(23));
+
+// type coercion
+
+console.log("I'm " + 23 + " years old");

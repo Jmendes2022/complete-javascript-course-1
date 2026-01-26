@@ -185,6 +185,49 @@ Basic Operators---------------------------------------
 
     Output: "Hello, my name is Jordan"
 
+
+Type Conversion and Type Coercion---------------------------
+
+Type Conversion is when the type is explicitly converted from one type to another. We can use the Number() function that will allow a number in string data type to be converted to a number data type. 
+
+When converting a value that cannot be converted, it will result in NaN. JavaScript can only convert into 3 types; String, Number, and Boolean.
+
+Example: 
+
+let yearInput = '1991'; 
+(This will be a string data type when printed on console);
+
+let yearInput = Number('1991');
+(This will be a number data type when printed on the console.)
+
+let yearInput = Number('Jordan');
+(This will result in NaN value);
+
+let yearInput = String(23);
+(This will result in 23 being a string -> '23');
+
+
+
+Type Coercion is when the type is converted by the compiler automatically and not explicitly.
+
+Whenever a number is coerced with a string, it will be changed to a string by the compiler.
+
+Example: 
+
+console.log("I'm " + 23 + ' years old');
+This will result in the number 23, being a string instead of a number, even if it was entered as a number.
+
+
+console.log('23' - '10' - 3); -> 10
+This will result in 10 as a number data type. The Strings will be converted to numbers because of using subtraction. 
+
+If we take the same scenario and added them together instead, it would result in 23103 because the compiler would concate all the strings together and convert the 3 into a string data type prior to adding them together.
+
+The above would also happen if we used multiplication or division of the strings. 
+
+let n = '1' + 1; -> will make a string of '11'
+let n = n - 1; -> converts the string '11' to 11 and subtracts 1
+result = 10;
 ------------------------------------------------------
 
 
