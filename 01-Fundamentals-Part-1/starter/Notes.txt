@@ -1,0 +1,190 @@
+              JavaScript Fundamentals
+
+
+Variables and Values -------------------------------
+
+  - a variable is like a box. the variable is the box and the value is whatever is inside of it. 
+  For example:
+
+  let firstName = 'Jordan';
+
+  - firstName is the variable (box) and the value is 'Jordan' (what is inside the box)
+
+  This allows the variable to be called multiple times without hard coding in the values and allows for dynamic programming.
+
+  - camelCase is also a common practice to enter in multiple word variables. The first letter should start with a lower case and the next word should start with a capital - no spaces between. They should also never start with a capital letter when considering variables. Make variable names meaningful. 
+
+  For example: 
+
+  let name = 'Jordan'; (This is a bad practice. Name is not descriptive enough. )
+
+  let firstName; (This is a better practice. the variable name is descriptive and it follows camelCase. The naming allows you to know what the variable is without looking at the value of it.)
+
+
+Objects and Primitives -------------------------------
+
+  In JavaScript, every value is either an Object or a primitive value. If a value is not an object, it is a primitive.
+
+  Object Example: 
+
+  let person = {
+    firstName: 'Jordan',
+    age: 23,
+    job: 'manager'
+  };
+
+  Primitive Value Example:
+
+  let firstName = 'Jordan';
+  let age = 23;
+
+  There are 7 different primitive data types:
+
+  1. number
+
+    - Are always floating point numbers meaning they will always have a decimal. used for decimals and integers. 
+
+    Example below:
+
+    let age = 25;
+
+  2. string
+
+    - Are a sequence of characters that is used for text. Must always be wrapped in either single or double quotes.
+
+    Example below:
+
+    let firstName = 'Jordan';
+
+  3. boolean
+
+    - A logical type that can only be true or false. Used for making decisions.
+
+    Example below: 
+
+    let isHungry = false;
+    let isHotOutside = true;
+
+  4. undefined
+
+    - Value taken by a variable that is not yet defined (empty value);
+
+    Example below:
+
+    let lastName;
+
+  5. null
+
+    - Also means empty value, but Typically when a variable's value is return empty.
+
+  6. symbol
+
+    - Value that is unique and cannot be changed.
+
+  7. big int
+
+    - larger integers than the Number type can hold
+
+  JavaScript has dynamic typing. The data type does not  have to be defined when a variable is declared - it is done automatically. 
+
+    Example below:
+
+    let JavaScriptIsFun = true (current data type is boolean)
+
+    JavaScriptIsFun = 'YES'; (new data type is a string)
+
+
+  The variable does not have a type, the value within the variable is what has the type.
+
+  - Typeof is an operator that will tell you the data type of the value. 
+
+    Example below:  
+
+    typeof('jordan') will return string.
+    typeof(true) will return boolean.
+    typeof(23) will return number.
+
+Comments----------------------------------------------
+
+  use // to comment out single lines of code.
+
+  use /* */ to comment out multiple lines of code. anything betweem the astricks will be commented out. in JavaScript.
+
+
+Declaring Variables ----------------------------------
+
+  var is the old way of declaring variables and is not really recommended anymore.
+
+  let keyword allows for variables to change later.
+
+  const stands for 'Constant' is another way to declare variables but they cannot be changed later.. Const variables cannot be declared undefined.
+
+  const should be used by default unless you are positive that the variable will change in the future.
+
+  Example: 
+
+  let age = 30;
+  const birthYear = 1996;
+
+  the age will change, so let is appropriate, while the birthyear will always remain the same so it can be a const.
+
+
+Basic Operators---------------------------------------
+
+  Operations can be performed on a variable declaration. 
+
+  Example below
+
+    const ageJordan = 2026 - 1996; (this will return 30).
+
+    Math Operators ----------------------------------
+
+    += is used when you want to add a value onto the current value of a variable. Must be used with X unless declaring a value to a new variable. 
+
+    Example below:
+
+    let x = 10;
+    x += 10; (This will print 20).
+
+    The same examples can be used with -=, *=, and /= as well.
+
+    x++ is another operator that will increment that value by 1. 
+
+    x-- is the same, just decrementing by 1.
+
+    Examples below:
+
+    let x = 1;
+
+    x++; (Value is now 2)
+    x--; (Value is now 1)
+    
+    Comparison Operators -----------------------------
+
+
+    This example will return a true or false based on the conditions. The result will have to be either logged to the console or stored in a variable (in this case 'isOlder').
+
+    let isOlder = ageJordan > ageSamantha; (false);
+    
+    Other comparison operators are >, <, >=, <=
+
+  Strings-------------------------------
+
+  when making a string with an apostrophy in a word, the entire string must be wrapped in double quotes.
+
+  Example:
+
+  let example = "Here's an example" (Here's means that the entire string needs to be wrapped in double quotes)
+
+  Template Literals are ways to make a string without have to concate multiple strings together while being able to type the string and places the variables within the string.
+
+  Example:
+
+    let firstName = 'Jordan';
+    `Hello, my name is ${firstName}`;
+
+    Output: "Hello, my name is Jordan"
+
+------------------------------------------------------
+
+

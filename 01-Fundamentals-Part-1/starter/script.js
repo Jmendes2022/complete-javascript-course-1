@@ -1,3 +1,125 @@
-let js = "amazing";
+/* let js = "amazing";
 
-console.log(40 + 8 + 23 - 10);
+//  console.log(40 + 8 + 23 - 10);
+
+console.log("Jordan");
+console.log(23);
+
+// Variable name convention
+let firstName = "Jordan";
+console.log(firstName);
+console.log(firstName);
+console.log(firstName);
+
+let myFirstJob = "Programmer";
+let myCurrentJob = "teacher";
+
+let job1 = "programmer";
+let job2 = "teacher";
+
+console.log(myFirstJob);
+
+// Single line comment
+
+/* 
+
+Multi line comments - anything between the astricks will be commented out.
+
+
+
+let javaScriptIsFun = true;
+console.log(javaScriptIsFun);
+
+console.log(typeof true);
+console.log(typeof javaScriptIsFun);
+console.log(typeof 23);
+console.log(typeof "Jordan");
+
+javaScriptIsFun = "YES";
+
+let year;
+console.log(year);
+console.log(typeof year);
+
+year = 1991;
+console.log(typeof year);
+
+console.log(typeof null);
+
+let age = 30;
+age = 31;
+
+const birthYear = 1996;
+// birthYear = 1990;
+
+//const job;
+
+var job = "programmer";
+job = "teacher";
+
+lastName = 'Mendes;
+console.log(lastName);
+
+const now = 2026;
+
+const ageJordan = now - 1996;
+const ageSamanatha = now - 1997;
+const ageAria = now - 2022;
+const ageMason = now - 2025;
+console.log(ageJordan, ageSamanatha, ageAria, ageMason);
+
+console.log(ageJordan * 2, ageJordan / 10, 2 ** 3);
+//2 ** 3 means 2 to the power of 3 = 2*2*2
+
+const firstName = "jordan";
+const lastName = "mendes";
+
+console.log(firstName + " " + lastName);
+
+let x = 10 + 5; // 15
+x += 10; // x = x + 10
+console.log(x); // 25
+
+x = 10;
+
+x *= 10;
+console.log(x); // 100
+x /= 10;
+console.log(x); // 10
+
+x = 1;
+
+x++;
+console.log(x); // 10
+x--;
+console.log(x); // 10
+
+console.log(ageJordan > ageSamanatha);
+console.log(ageSamanatha >= 18);
+console.log(ageAria >= 18);
+
+const isFullAge = ageAria >= 18;
+console.log(now - 1991 > now - 2018);
+*/
+
+const now = 2037;
+const ageJordan = now - 1996;
+const ageAria = now - 2018;
+
+const averageAge = (ageJordan + ageAria) / 2;
+
+console.log(averageAge);
+
+const firstName = "Jordan";
+const job = "teacher";
+const birthYear = 1996;
+const year = 2026;
+
+const jordan =
+  "I'm  " + firstName + ", a " + (year - birthYear) + " year old " + job + "!";
+
+console.log(jordan);
+
+const jordanNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
+
+console.log(jordanNew);
