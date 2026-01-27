@@ -228,6 +228,36 @@ The above would also happen if we used multiplication or division of the strings
 let n = '1' + 1; -> will make a string of '11'
 let n = n - 1; -> converts the string '11' to 11 and subtracts 1
 result = 10;
+
+
+Truthy and Falsey Values -----------------------------------------
+
+ In JavaScript, there are 5 falsey values. (0, '', undefined, null, NaN). These values will be false when converted to a boolean. Everything else will be considered a truthy value.
+
+ An empty object is returned as a truthy value.
+
+Equality Operators -----------------------------------------------
+
+  Strict Equality Operator is ===. This type of operator DOES NOT perform type coercion when comparing the two values.
+
+  Example:
+
+  if (18 === '18') -> This will return false
+
+  Loose Equality Operator is ==. This type of operator WILL perform type coercion when comparing the two values. 
+
+  Example: 
+
+  if (18 == '18') -> This will return true.
+  
+
+Boolean Logic ----------------------------------------------------
+
+  
+
+
+
+
 ------------------------------------------------------
 
 
