@@ -251,9 +251,18 @@ Equality Operators -----------------------------------------------
   if (18 == '18') -> This will return true.
   
 
-Boolean Logic ----------------------------------------------------
+Ternary Operator / Conditional Operator --------------------------
 
-  
+  Used as an if/else statement, but on a single line of code instead.
+
+  Example:
+
+  const age = 23;
+  age >= 18 ? console.log('Older than 18') : console.log('Younger than 18');
+
+  This will return one of the two options depending on the value of the variable, 'age', listed above.
+
+  This has 3 different parts of the operator; The condition, the if part, and the else part. It will always produce a value, which means that it can always be assigned ot a variable.
 
 
 
