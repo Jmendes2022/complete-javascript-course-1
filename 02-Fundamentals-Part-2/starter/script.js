@@ -139,7 +139,6 @@ const ages = [
 
 console.log(ages);
 
-*/
 
 const friends = ["Michael", "Steven", "Peter"];
 let newLength = friends.push("Jay");
@@ -168,3 +167,84 @@ console.log(friends.includes("23"));
 if (friends.includes("Steven")) {
   console.log("You have a friend called Steven");
 }
+
+
+const jordanArray = [
+  "Jordan",
+  "Mendes",
+  2037 - 1996,
+  "Teacher",
+  ["Samantha", "Aria", "Mason"],
+];
+
+const jordan = {
+  firstName: "Jordan",
+  lastName: "Mendes",
+  age: 2037 - 1996,
+  job: "teacher",
+  friends: ["Samantha", "Aria", "Mason"],
+};
+
+console.log(jordan.lastName);
+console.log(jordan["lastName"]);
+
+const nameKey = "Name";
+console.log(jordan["first" + nameKey]);
+console.log(jordan["last" + nameKey]);
+
+// let interestedIn = prompt(
+//   "What do you want to know about Jordan? Choose between firstName, lastName, age, job, and friends",
+// );
+
+// if (jordan[interestedIn]) {
+//   console.log(jordan[interestedIn]);
+// } else {
+//   interestedIn = prompt(
+//     "Wrong request! What do you want to know about Jordan? Choose between firstName, lastName, age, job, and friends",
+//   );
+// }
+
+jordan.location = "United States";
+jordan["discord"] = "waterwedoin";
+
+console.log(jordan);
+
+// Challenge
+
+console.log(
+  `${jordan.firstName} has ${jordan.friends.length} friends, and his best friend is called ${jordan.friends[0]}`,
+);
+
+
+const jordan = {
+  firstName: "Jordan",
+  lastName: "Mendes",
+  birthYear: 1996,
+  job: "manager",
+  friends: ["Samantha", "Aria", "Mason"],
+  hasDriversLicense: true,
+
+  // calcAge: function () {
+  //   // console.log(this);
+  //   return 2037 - this.birthYear;
+  // },
+
+  calcAge: function () {
+    this.age = 2037 - this.birthYear;
+    return this.age;
+  },
+  
+  getSummary: function () {
+    return `${this.firstName} is a ${this.calcAge()}-year old ${this.job}, and he ${this.hasDriversLicense ? "has" : "does not have"} a drivers license`;
+  },
+};
+
+console.log(jordan.calcAge());
+
+console.log(jordan.age);
+console.log(jordan.age);
+console.log(jordan.age);
+
+console.log(jordan.getSummary());
+
+*/
