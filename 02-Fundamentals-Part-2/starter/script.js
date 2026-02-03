@@ -247,4 +247,86 @@ console.log(jordan.age);
 
 console.log(jordan.getSummary());
 
-*/
+
+// console.log("Lifting weights repetition 1");
+
+for (let i = 1; i <= 10; i++) {
+  console.log(`Lifting weights repetition ${i}`);
+}
+
+
+const jordanArray = [
+  "Jordan",
+  "Mendes",
+  2037 - 1996,
+  "Teacher",
+  ["Samantha", "Aria", "Mason"],
+  true,
+];
+
+let types = [];
+
+for (let i = 0; i < jordanArray.length; i++) {
+  console.log(jordanArray[i], typeof jordanArray[i]);
+  types.push(typeof jordanArray[i]);
+}
+
+console.log(types);
+
+const years = [1991, 2007, 1969, 2020];
+
+let ages = [];
+
+for (let i = 0; i < years.length; i++) {
+  ages.push(2037 - years[i]);
+}
+
+console.log(ages);
+
+// contunue and break
+console.log("--------- ONLY STRINGS ----------");
+
+for (let i = 0; i < jordanArray.length; i++) {
+  if (typeof jordanArray[i] !== "string") continue;
+
+  console.log(jordanArray[i], typeof jordanArray[i]);
+}
+
+console.log("--------- BREAK WITH NUMBER ----------");
+
+for (let i = 0; i < jordanArray.length; i++) {
+  if (typeof jordanArray[i] === "number") break;
+
+  console.log(jordanArray[i], typeof jordanArray[i]);
+}
+
+
+const jordan = [
+  "Jordan",
+  "Mendes",
+  2037 - 1996,
+  "Teacher",
+  ["Samantha", "Aria", "Mason"],
+  true,
+];
+
+for (let i = jordan.length - 1; i >= 0; i--) {
+  console.log(jordan[i]);
+}
+
+for (let exercise = 1; exercise < 4; exercise++) {
+  console.log(`------- Starting excerise ${exercise}---------`);
+
+  for (let rep = 1; rep < 6; rep++) {
+    console.log(`Lifting weights repetition ${rep}`);
+  }
+}
+
+
+// let set = 1;
+//   for (let rep = 1; rep < 2; rep++) {
+  //     console.log(`Lifting weights repetition ${rep}`);
+  //   }
+  // }
+  
+  */
